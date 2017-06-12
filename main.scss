@@ -4,6 +4,7 @@ $spacing: 8px;
 
 $black: #111111;
 $grey: #b8b8b8;
+$darkBlue: #001f3f;
 
 $fontPrimary: 'Open Sans Condensed', sans-serif;
 $fontSecondary: 'Anton', sans-serif;
@@ -51,6 +52,11 @@ p {
   &.-small {
     font-size: .9rem;
   }
+}
+
+a {
+  font-size: .9rem;
+  color: $darkBlue;
 }
 
 span {
