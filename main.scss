@@ -52,11 +52,20 @@ p {
   &.-small {
     font-size: .9rem;
   }
+
+  &.-bold {
+    font-weight: 800;
+  }
 }
 
 a {
   font-size: .9rem;
   color: $darkBlue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 span {
@@ -75,6 +84,14 @@ ul {
   margin-bottom: 0;
   padding-right: $spacing * 4;
   list-style-type: square;
+
+  li b {
+    font-weight: 800;
+  }
+}
+
+div.-inline {
+  display: inline-block;
 }
 
 .title {
@@ -89,7 +106,7 @@ ul {
     &:after {
       content: '';
       display: block;
-      width: 100%;
+      width: 50%;
       height: 1px;
       background-color: $black;
     }
@@ -114,6 +131,10 @@ ul {
     display: inline-flex;
     flex-direction: column;
     vertical-align: top;
+
+    > div {
+      padding-right: -$spacing;
+    }
   }
 
   &.-right-border {
@@ -167,5 +188,10 @@ ul {
 
   &.container__one-sixth {
     width: 16%;
+  }
+
+  .contact {
+    float: right;
+    margin-top: 1em;
   }
 }
