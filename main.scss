@@ -1,120 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300,700');
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i');
 
-$spacing: 8px;
+$spacing: 24px;
 
 $black: #111111;
-$grey: #b8b8b8;
-$darkBlue: #001f3f;
+$white: #FFFFFF;
+$light-gray: #DDDDDD;
 
-$fontPrimary: 'Open Sans Condensed', sans-serif;
-$fontSecondary: 'Anton', sans-serif;
+$primary-font: 'Roboto Mono', monospace;
+$cursive: 'Mr Dafoe', cursive;
 
 html, body {
-  font-family: $fontPrimary;
-  background: #FFF;
+  font-family: $primary-font;
+  background: $white;
   color: $black;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 html, body, h1, h2, h3, h4, h5, p {
   margin: 0;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-h5 {
-  font-size: 1.1rem;
-  font-weight: 300;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 300;
-
-  &.-small {
-    font-size: .9rem;
-  }
-
-  &.-bold {
-    font-weight: 800;
-  }
-}
-
-a {
-  font-size: .9rem;
-  color: $darkBlue;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-span {
-  font-size: .9rem;
-  color: $grey;
-  font-weight: 300;
-
-  &.-extra_small {
-    font-size: .6rem;
-    display: block;
-  }
-}
-
-ul {
-  margin-top: 8px;
-  margin-bottom: 0;
-  padding-right: $spacing * 4;
-  list-style-type: square;
-
-  li b {
-    font-weight: 800;
-  }
-}
-
-div.-inline {
-  display: inline-block;
-}
-
-.title {
-  font-family: $fontSecondary;
-}
-
-.header {
-  font-weight: 300;
-  margin-bottom: $spacing + ($spacing / 2);
-
-  &:not(.-right) {
-    &:after {
-      content: '';
-      display: block;
-      width: 50%;
-      height: 1px;
-      background-color: $black;
-    }
-  }
-
-  &.-right {
-    margin-right: $spacing;
-  }
 }
 
 .fluid-container {
@@ -123,75 +27,116 @@ div.-inline {
   margin: auto;
 }
 
+.padding {
+  padding: 0 $spacing;
+}
+
+.vertical-spacing {
+  margin: $spacing 0;
+}
+
 .container {
-  display: flex;
-  flex: 1 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
 
-  .container {
-    display: inline-flex;
-    flex-direction: column;
-    vertical-align: top;
-
-    > div {
-      padding-right: -$spacing;
-    }
+  &.-one-third {
+    width: 33.33%;
   }
 
-  &.-right-border {
-    height: 100%;
-
-    > div {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      text-align: right;
-      word-spacing: 100000px;
-      border-right: 1px solid $black;
-    }
+  &.-two-thirds {
+    width: 66.66%;
   }
 
-  > div {
-    width: 100%;
-
-    &.-narrow {
-      width: 60%;
-    }
-
-    &.-center {
-      text-align: center;
-    }
-
-    &.-padding {
-      padding: $spacing;
-    }
-
-    &.-seperate {
-      margin-top: $spacing * 2;
-    }
-
-    &.-extra_seperate {
-      margin-top: $spacing * 7;
-    }
+  &.-one-quarter {
+    width: 25%;
   }
 
-  &.container__half {
-    width: 50%;
+  &.-three-quarters {
+    width: 75%;
+  }
+}
+
+.grid:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.header {
+  border-bottom: 1px solid $light-gray;
+  padding-bottom: $spacing / 3;
+
+  .header__name {
+    font-family: $cursive;
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
   }
 
-  &.container__one-third {
-    width: 33%;
-  }
-
-  &.container__two-thirds {
-    width: 66%;
-  }
-
-  &.container__one-sixth {
-    width: 16%;
-  }
-
-  .contact {
+  .header__contact {
     float: right;
-    margin-top: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1.25em;
+    font-size: .8rem;
   }
+}
+
+.console-line {
+  margin: $spacing 0;
+  font-size: .8rem;
+
+  .console-line__pre {
+    font-weight: 200;
+    display: inline-block;
+  }
+
+  .console-line__cmd {
+    font-weight: 400;
+    display: inline-block;
+  }
+}
+
+.profile {
+  .profile__bio {
+    font-size: .9rem;
+    font-weight: 300;
+  }
+}
+
+.skills {
+  p {
+    font-weight: 300;
+    font-size: .8rem;
+  }
+}
+
+.position {
+  .position__title {
+    font-size: 1.2rem;
+
+    i {
+      font-style: italic;
+      font-weight: 100;
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: .8rem;
+      font-weight: 100;
+      margin-left: $spacing / 2;
+    }
+  }
+
+  .position__description {
+    font-size: .9rem;
+    font-weight: 300;
+    margin-top: $spacing / 2;
+  }
+}
+
+.photo {
+  font-size: .5rem;
+  line-height: .25rem;
 }

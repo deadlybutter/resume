@@ -1,123 +1,92 @@
-@import url("https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300,700");
+@import url("https://fonts.googleapis.com/css?family=Mr+Dafoe");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i");
 html, body {
-  font-family: "Open Sans Condensed", sans-serif;
-  background: #FFF;
+  font-family: "Roboto Mono", monospace;
+  background: #FFFFFF;
   color: #111111;
-  font-size: 18px; }
+  font-size: 16px; }
 
 html, body, h1, h2, h3, h4, h5, p {
   margin: 0; }
-
-h1 {
-  font-size: 2rem;
-  font-weight: 700; }
-
-h2 {
-  font-size: 1.5rem;
-  font-weight: 700; }
-
-h3 {
-  font-size: 1.2rem;
-  font-weight: 700; }
-
-h4 {
-  font-size: 1.1rem;
-  font-weight: 700; }
-
-h5 {
-  font-size: 1.1rem;
-  font-weight: 300; }
-
-p {
-  font-size: 1rem;
-  font-weight: 300; }
-  p.-small {
-    font-size: .9rem; }
-  p.-bold {
-    font-weight: 800; }
-
-a {
-  font-size: .9rem;
-  color: #001f3f;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
-
-span {
-  font-size: .9rem;
-  color: #b8b8b8;
-  font-weight: 300; }
-  span.-extra_small {
-    font-size: .6rem;
-    display: block; }
-
-ul {
-  margin-top: 8px;
-  margin-bottom: 0;
-  padding-right: 32px;
-  list-style-type: square; }
-
-div.-inline {
-  display: inline-block; }
-
-.title {
-  font-family: "Anton", sans-serif; }
-
-.header {
-  font-weight: 300;
-  margin-bottom: 12px; }
-  .header:not(.-right):after {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 1px;
-    background-color: #111111; }
-  .header.-right {
-    margin-right: 8px; }
 
 .fluid-container {
   width: 100%;
   max-width: 800px;
   margin: auto; }
 
+.padding {
+  padding: 0 24px; }
+
+.vertical-spacing {
+  margin: 24px 0; }
+
 .container {
-  display: flex;
-  flex: 1 100%; }
-  .container .container {
-    display: inline-flex;
-    flex-direction: column;
-    vertical-align: top; }
-    .container .container > div {
-      padding-right: -8px; }
-  .container.-right-border {
-    height: 100%; }
-    .container.-right-border > div {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      text-align: right;
-      word-spacing: 100000px;
-      border-right: 1px solid #111111; }
-  .container > div {
-    width: 100%; }
-    .container > div.-narrow {
-      width: 60%; }
-    .container > div.-center {
-      text-align: center; }
-    .container > div.-padding {
-      padding: 8px; }
-    .container > div.-seperate {
-      margin-top: 16px; }
-    .container > div.-extra_seperate {
-      margin-top: 56px; }
-  .container.container__half {
-    width: 50%; }
-  .container.container__one-third {
-    width: 33%; }
-  .container.container__two-thirds {
-    width: 66%; }
-  .container.container__one-sixth {
-    width: 16%; }
-  .container .contact {
+  display: inline-block;
+  box-sizing: border-box;
+  float: left; }
+  .container.-one-third {
+    width: 33.33%; }
+  .container.-two-thirds {
+    width: 66.66%; }
+  .container.-one-quarter {
+    width: 25%; }
+  .container.-three-quarters {
+    width: 75%; }
+
+.grid:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.header {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 8px; }
+  .header .header__name {
+    font-family: "Mr Dafoe", cursive;
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle; }
+  .header .header__contact {
     float: right;
-    margin-top: 1em; }
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1.25em;
+    font-size: .8rem; }
+
+.console-line {
+  margin: 24px 0;
+  font-size: .8rem; }
+  .console-line .console-line__pre {
+    font-weight: 200;
+    display: inline-block; }
+  .console-line .console-line__cmd {
+    font-weight: 400;
+    display: inline-block; }
+
+.profile .profile__bio {
+  font-size: .9rem;
+  font-weight: 300; }
+
+.skills p {
+  font-weight: 300;
+  font-size: .8rem; }
+
+.position .position__title {
+  font-size: 1.2rem; }
+  .position .position__title i {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1rem; }
+  .position .position__title span {
+    font-size: .8rem;
+    font-weight: 100;
+    margin-left: 12px; }
+
+.position .position__description {
+  font-size: .9rem;
+  font-weight: 300;
+  margin-top: 12px; }
+
+.photo {
+  font-size: .5rem;
+  line-height: .25rem; }

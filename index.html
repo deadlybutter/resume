@@ -9,96 +9,102 @@
   </head>
   <body>
     <div class="fluid-container">
-      <article>
-        <div class="container container__full">
-          <div class="-seperate">
-            <div class="-inline">
-              <h1 class="title">Joe Kent</h1>
-              <div><span>me@joe-kent.com</span></div>
+
+      <div class="header">
+        <div class="padding">
+          <h1 class="header__name">Joe Kent</h1>
+          <p class="header__contact">718 734 7353 &bull; hey@joekent.nyc</p>
+        </div>
+      </div>
+
+      <div class="console-line">
+        <p class="console-line__pre">/users/joekent/resume $</p>
+        <p class="console-line__cmd">cat profile.txt</p>
+      </div>
+
+      <div class="console-output profile">
+        <div class="grid">
+          <div class="container -one-quarter">
+            <div class="padding">
+              <pre class="photo">
+                  ,;
+                 '@@@
+                 @#''
+                 ##:+
+                  @,#
+                  #'+
+               .'@@;++'
+              #++###+#++
+             `#+'##+#++#'
+             ;'+'+++++'#'
+             +#+@+#+##+#'
+             @##+#++#++#+
+             ###+##++++#+
+             #+@+#+;++'#+
+             +'#+#,'`.+;;
+              #++++;#.,:'
+              `#+#,@#+@`
+               @++#@@@'
+               @@@@#'#+
+               @##+#++'
+               ++##+'++
+               #+##++##
+              </pre>
+            </div>
+          </div>
+
+          <div class="container -three-quarters">
+            <div class="padding">
+              <p class="profile__bio">Spicy jalapeno bacon ipsum dolor amet pastrami in minim, porchetta short loin leberkas pancetta beef ribs cupim deserunt andouille filet mignon sed incididunt ut. Bacon magna mollit ball tip boudin cupim, alcatra sausage voluptate consectetur fugiat duis commodo in incididunt.</p>
             </div>
           </div>
         </div>
-        <div class="container container__full">
-          <div class="-seperate">
-            <div class="container container__two-thirds">
-              <div>
-                <h2 class="header">Experience</h2>
-              </div>
-              <div>
-                <h3>Software Engineer, DoSomething.org</h3>
-                <div><span>Jan 2017 - Present</span></div>
-                <ul>
-                  <li>Rebuilt the core user experience with a small team from the ground up using React & Redux.</li>
-                  <li>Continuously improved the new user experience based on analytical insights and feature requests.</li>
-                  <li>Created a new data pipeline that brought the organization's time to data to zero.</li>
-                  <li>Independently thought through, designed and implemented an A/B test which doubled overall conversion rate.</li>
-                  <li>Quickly became deeply familiar with the intricacies and usage of several third-party services, including Contentful, Keen IO and Heroku.</li>
-                  <li>Maintained and updated legacy systems as needed.</li>
-                </ul>
-              </div>
-              <div class="-seperate">
-                <h3>Junior Software Engineer, DoSomething.org</h3>
-                <div><span>July 2015 - Jan 2017</span></div>
-                <ul>
-                  <li>Introduced React to the organization's frontend toolkit.</li>
-                  <li>Interim project lead for the organization's realtime messaging services.</li>
-                  <li>Engineered global routing functionality of the organization's Drupal website.</li>
-                  <li>Participated in building and maintaining various micro-services using primarily NodeJS and Laravel.</li>
-                  <li>Built an event presentation application and coordinated A/V for live events.</li>
-                  <li>Resolved security vulnerabilities and restored several thousand files of user generated content after a major file loss.</li>
-                </ul>
-              </div>
-              <div class="-seperate">
-                <h3>Web Developer Intern, DoSomething.org</h3>
-                <div><span>July 2014 - July 2015</span></div>
-                <ul>
-                  <li>Built a realtime dashboard that visualized incoming traffic and user generated events.</li>
-                </ul>
-              </div>
+      </div>
+
+      <div class="console-line">
+        <p class="console-line__pre">/users/joekent/resume $</p>
+        <p class="console-line__cmd">ls experience/</p>
+      </div>
+
+      <div class="console-output">
+        <div class="padding">
+          <div class="vertical-spacing">
+            <div class="position">
+              <h1 class="position__title">Software Engineer <span> DoSomething.org, Jan. 2017 - Present</span></h1>
+              <p class="position__description">Voluptate strip steak dolore t-bone, ribeye rump filet mignon in. Ad meatball ut ball tip. Culpa cupidatat brisket quis reprehenderit exercitation, cillum salami biltong dolor minim excepteur elit. Picanha flank sint, enim cupim beef ribs alcatra dolore pork loin est boudin pork culpa laborum.</p>
             </div>
-            <div class="container container__one-third">
-              <div>
-                <h2 class="header">Expertise & Skills</h2>
-              </div>
-              <div>
-                <p class="-bold">Frontend Development</p>
-                <ul>
-                  <li><b>JS:</b> ES5, ES6</li>
-                  <li><b>React:</b> React-Router, Redux, Radium</li>
-                  <li><b>CSS:</b> SCSS, CSS3, responsive design</li>
-                  <li><b>Testing:</b> Mocha, Chai, Enzyme, Jest, Storybook</li>
-                </ul>
-              </div>
-              <div class="-seperate">
-                <p class="-bold">Backend Development</p>
-                <ul>
-                  <li><b>Node:</b> Express, Mongoose, Superagent</li>
-                  <li><b>CMS:</b> Laravel, Drupal, Contentful</li>
-                  <li><b>DB:</b> MongoDB, SQL, Redis</li>
-                  <li><b>Messaging:</b> RabbitMQ, Twilio</li>
-                </ul>
-              </div>
-              <div class="-seperate">
-                <p class="-bold">Tools</p>
-                <ul>
-                  <li><b>Git:</b> Github</li>
-                  <li><b>Frontend Pipeline:</b> Webpack, Babel</li>
-                  <li><b>Package Managers:</b> NPM, Composer</li>
-                  <li><b>Deployment:</b> Wercker, Envoyer, Jenkins</li>
-                  <li><b>Hosting:</b> Heroku, AWS, Docker</li>
-                  <li><b>Analytics:</b> Google Analytics, Keen.io, StatHat</li>
-                  <li><b>A/B Testing:</b> Optimizely, Sixpack</li>
-                </ul>
-              </div>
+          </div>
+          <div class="vertical-spacing">
+            <div class="position">
+              <h1 class="position__title">Junior Software Engineer <span> DoSomething.org, July. 2015 - Jan. 2017</span></h1>
+              <p class="position__description">Voluptate strip steak dolore t-bone, ribeye rump filet mignon in. Ad meatball ut ball tip. Culpa cupidatat brisket quis reprehenderit exercitation, cillum salami biltong dolor minim excepteur elit. Picanha flank sint, enim cupim beef ribs alcatra dolore pork loin est boudin pork culpa laborum.</p>
+            </div>
+          </div>
+          <div class="vertical-spacing">
+            <div class="position">
+              <h1 class="position__title">Web Developer Intern <span> DoSomething.org, July. 2014 - July. 2015</span></h1>
+              <p class="position__description">Voluptate strip steak dolore t-bone, ribeye rump filet mignon in. Ad meatball ut ball tip. Culpa cupidatat brisket quis reprehenderit exercitation, cillum salami biltong dolor minim excepteur elit. Picanha flank sint, enim cupim beef ribs alcatra dolore pork loin est boudin pork culpa laborum.</p>
+            </div>
+          </div>
+          <div class="vertical-spacing">
+            <div class="position">
+              <h1 class="position__title">Volunteer Software Engineer <span> LetAmericaVote, July. 2017 - Present</span></h1>
+              <p class="position__description">Voluptate strip steak dolore t-bone, ribeye rump filet mignon in. Ad meatball ut ball tip. Culpa cupidatat brisket quis reprehenderit exercitation.</p>
             </div>
           </div>
         </div>
-        <div class="container container__full">
-          <div class="-seperate -center">
-            <span>fork this resume on github - <a href="github.com/deadlybutter/resume">github.com/deadlybutter/resume</a></span>
-          </div>
+      </div>
+
+      <div class="console-line">
+        <p class="console-line__pre">/users/joekent/resume $</p>
+        <p class="console-line__cmd">tail skills.txt</p>
+      </div>
+
+      <div class="console-output skills">
+        <div class="padding">
+          <p>Chicken, drumstick, prosciutto, deserunt, pariatur, capicola, adipisicing, strip steak, drumstick, cupim andouille, turducken.</p>
         </div>
-      </article>
+      </div>
     </div>
   </body>
 </html>
